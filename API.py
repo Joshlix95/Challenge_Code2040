@@ -1,24 +1,35 @@
-def getstring(x):
+
+# STAGE 1: Reverse a string
+# I suggested two ways to solve this problem:
+# First way:
+
+def getString(x):
     y=[]
     for item in range(len(x)):
         y.append(x[len(x)-item-1])
 
     return ''.join(y)
 
-def det(x):
+# Second way:
+
+def GetString(x):
     return x[::-1]
 
-dico={"needle":"frog","haystack":["dog","pig","chicken","cat","frog","turkey"]}
+# STAGE II: Needle in a haystack
+# The task is to to tell the API where the needle is in the array.
 
 def FindNeedle():
-    for item in dico["haystack"]:
+    for item in dico["haystack"]: # I assumed that the dictionary variable given by the API is dico
         if item==dico["needle"]:
             return (dico["haystack"]).index(item)
 
+# STAGE III: Prefix 
+# The task is to to return an array containing only the strings that do not start with the prefix given in the dictionary. 
 
 def NotInArray():
     y=[]
-    (dico["prefix"])=(dico["prefix"]).lower() #I assume that the prefix with lower or uppercase are equivalent when comparing with the strings  in the array.
+    (dico["prefix"])=(dico["prefix"]).lower()   # I considered that the prefix with lower or uppercase are equivalent.
+                                                # I assumed that the dictionary variable given by the API is dico
 
     for item in dico["array"]:
         if item[:len(dico["prefix"])]!=dico["prefix"]:
@@ -26,14 +37,13 @@ def NotInArray():
 
     return y
 
+# STAGE IV: The dating game
+# The job is to add the interval to the date formatted as an ISO 8601 datestamp
 
 from datetime import datetime
 from datetime import timedelta
 
-dico={"datestamp":"2006-11-21 16:30","interval":730}
-
 def DatingGame():
-
     dt = datetime.strptime((dico["datestamp"]), "%Y-%m-%d %H:%M")
     return str(dt+timedelta(seconds=(dico["interval"])))
 
