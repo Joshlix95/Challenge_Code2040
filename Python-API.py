@@ -17,7 +17,8 @@ def register(email,github): # email="joshlixmus@gmail.com and github="https://gi
     rsp = urllib2.urlopen(req, json.dumps(values))
     output = rsp.read()
     
-    return output
+    return output 
+    # Here my output returned is "VRuTsY1q6Z". It must use in the rest of my project.
 
 # Now it’s time for the challenge.
 # The value of token is given in my previous code.
@@ -30,6 +31,7 @@ def getchallenge(token,url):
     output = response.read()
     
     return output
+    # Here my result obtained depends on the challenge to be selected.
 
 # Now it comes to precise what stage of the challenge I want to deal with.
 # validatechallenge() takes two arguments:
@@ -125,7 +127,6 @@ def datingGame(data,token):
     result = json.loads(data)['result']
     datestamp = result['datestamp']
     interval = result['interval']
-    time = iso8601.parse_date(datestamp)
     
     dt = datetime.strptime((dico["datestamp"]), "%Y-%m-%d %H:%M")
     return {'token':token, 'datestamp':str(dt+timedelta(seconds=(dico["interval"])))}
@@ -135,7 +136,7 @@ def datingGame(data,token):
 import json
 
 def main():
-    my_token = 'rmUQt128vF'
+    my_token = 'VRuTsY1q6Z'
     challenge_urls = [
         'http://challenge.code2040.org/api/getstring',
         'http://challenge.code2040.org/api/prefix',
