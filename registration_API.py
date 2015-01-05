@@ -155,11 +155,11 @@ def main():
     while(valid_choice == True):
         print "++++++++++++++++++++++++++++++++++++++++++"
         print "What challenge do you want to solve? *"
-        print "1.- Reverse String *"
-        print "2.- Prefix *"
-        print "3.- The Dating Game *"
-        print "4.- Haystack *"
-        print " *"
+        print "1.- Reverse String "
+        print "2.- Prefix "
+        print "3.- Haystack "
+        print "4.- The Dating Game "
+        print " "
         print "Write 'Grades' to check grade on the API *"
         print "++++++++++++++++++++++++++++++++++++++++++"
         choice = raw_input("Enter your choice: ")
