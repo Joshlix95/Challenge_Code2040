@@ -128,11 +128,12 @@ def datingGame(data,token):
     datestamp = result['datestamp']
     interval = result['interval']
     
-    dt = datetime.strptime((dico["datestamp"]), "%Y-%m-%d %H:%M")
-    return {'token':token, 'datestamp':str(dt+timedelta(seconds=(dico["interval"])))}
+    dt = datetime.strptime((result["datestamp"]),'%Y-%m-%dT%H:%M:%S.%fZ')
+    return {'token':token, 'datestamp':str(dt+timedelta(seconds=(result["interval"])))}
 
 #####################################-----------------PART THREE----------------#######################################
 # My principal function for navigation! This part will help me  to go through all my built code.
+
 import json
 
 def main():
@@ -188,3 +189,6 @@ def main():
         valid_choice = False
         
 main()
+
+######################################## THIS IS THE END OF THE CHALLENGE ###################################################
+
