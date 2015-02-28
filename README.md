@@ -1,12 +1,12 @@
 Author: Josuel Musambaghani
 Email: joshlixmus@gmail.com
 
-API-Code2040
-============
+API Challenge -Code2040
+=======================
 
-The API challenge is an amazing exercise for programmers. It is such a tool that helps to reinforce some forgotten references about libraries' usage. Through a careful execution of my work, lot of interactions with the API urls were mostly the challenging part, when it comes to request my "token" for example. 
+The API challenge is an amazing exercise for programmers with engaging problems. It is such a tool that helps to reinforce some forgotten references about libraries' usage. Through a careful execution of my work, lot of interactions with the API urls were mostly the challenging part, when it comes to request my "token" for example. 
 
-I built my work as one "block" (in one file) because the project itself was not so long to require sequencing. In my one file, three main parts can easily be identified:
+I structured my work as one "block", (in one file) because the project itself was not so long to require sequencing. In my one file, three main parts can easily be identified:
 
 I. Part 1
 
