@@ -2,12 +2,12 @@
 # Email: joshlixmus@gmail.com
 # ____________________________________________________________________________________________________________________
 #############################################---------PART ONE----------##############################################
-# This is the foundation of my work, a solid reference from which all challenges will have their resources. 
+# This is the main part of my work, a solid reference from which all challenges will have their resources. 
 
 import urllib2
 import json
 
-# First, let us start by the registration ...
+# First, let us start by the registration
 
 def register(email,github): # email="joshlixmus@gmail.com and github="https://github.com/Joshlix95"
     url = 'http://challenge.code2040.org/api/register'
