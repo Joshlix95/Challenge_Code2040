@@ -11,9 +11,13 @@ I structured my work as one "block", (in one file) because the project itself wa
 #### I. Part One
 
 The first part started by defining helpful functions considered as the basement of my work. These defined functions mainly execute four main challenges:
+
 1. Registration: to figure out my token which is the main key to solve the whole challenge.
+
 2. Get the challenge: to request challenges from the API.  
+
 3. Validate my challenge: to append or submit my answers to the API after solving the challenge.
+
 4. Grades: to verify my grades. The API here returns the result of each of the four phases of the challenge.
 
 #### II. Part Two
